@@ -393,9 +393,9 @@ static BOOL protocol_containsSelector(Protocol *protocol, SEL selector)
                 [self downloadDataInSection:indexPath.section];
             } else {
                 if ([self.showingSectionsDictionary[key] boolValue]) {
-                    [self collapseSection:indexPath.section animated:YES];
+                    [self collapseSection:indexPath.section animated:NO];
                 } else {
-                    [self expandSection:indexPath.section animated:YES];
+                    [self expandSection:indexPath.section animated:NO];
                 }
             }
         } else {
